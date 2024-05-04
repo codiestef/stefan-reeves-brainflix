@@ -1,8 +1,8 @@
 import React from 'react';
-import "./Navbar.scss";
-import logo from "../../assets/Icons/BrainFlix-logo.svg";
-import avatar from "../../assets/Images/Mohan-muruge.jpg";
-import uploadIcon from "../../assets/Icons/upload.svg";
+import "../styles/componentstyles/Navbar.scss";
+import logo from "../assets/Icons/BrainFlix-logo.svg";
+import avatar from "../assets/Images/Mohan-muruge.jpg";
+import uploadIcon from "../assets/Icons/upload.svg";
 
 function Navbar() {
     return (
