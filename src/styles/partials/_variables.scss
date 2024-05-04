@@ -1,25 +1,23 @@
-@import './components/Navbar/Navbar.css';
+// import React from 'react';
+// import fontface from './src'
 
-/* TYPE KIT */
-
-/* Typeface & Weights: */
-@font-face {
-    font-family: 'Avenir Next LT Pro';
-        src: url(./assets/Font/AvenirNextLTPro-Regular.otf) format('otf') local(Avenir Next LT Pro);
-        font-weight: 400;
-    }
+// @font-face {
+//     font-family: 'Avenir Next LT Pro';
+//         src: url(../../assets/fonts/AvenirNextLTPro.ttf) format('ttf') local(Avenir Next LT Pro);
+//         font-weight: 400;
+//     }
     
-    // @font-face {
-    //     font-family: 'Avenir Next LT Pro';
-    //     src: url(../../assets/fonts/AvenirNextLTProDemi.ttf) format('ttf') local(Avenir Next LT Pro Demi);
-    //     font-weight: 600;
-    // }
+//     @font-face {
+//         font-family: 'Avenir Next LT Pro';
+//         src: url(../../assets/fonts/AvenirNextLTProDemi.ttf) format('ttf') local(Avenir Next LT Pro Demi);
+//         font-weight: 600;
+//     }
     
-    // @font-face {
-    //     font-family: 'Avenir Next LT Pro';
-    //     src: url(../../assets/fonts/AvenirNextLTProBold.ttf) format('ttf') local(Avenir Next LT Pro Bold);
-    //     font-weight: 700;
-    // }
+//     @font-face {
+//         font-family: 'Avenir Next LT Pro';
+//         src: url(../../assets/fonts/AvenirNextLTProBold.ttf) format('ttf') local(Avenir Next LT Pro Bold);
+//         font-weight: 700;
+//     }
 
 /* Text Styles: */
 $body-font-weight: 400;
@@ -68,13 +66,13 @@ $label-line-height-DT: 1.3rem;
 
 // buttons
 $button-font-color:#FFFFFF;
-$button-font-weight: 700;
+$button-font-weight: 600;
 $button-background: #0095FF;
 $button-background-hover: #0065AD;
 $button-height: 2.5rem;
 $button-radius: 0.25rem;
 
-$button-font-size-M: 0.65rem;
+$button-font-size-M: 0.75rem;
 $button-line-height-M: 1.3rem;
 $button-width-M: 100%;
 
@@ -85,7 +83,7 @@ $button-padding-left-right-DT: 2rem;
 
 // form fields
 $form-field-radius: 0.25rem;
-$form-field-border: 0.063rem solid #E1E1E1;
+$form-field-border: 0.09rem solid #E1E1E1;
 $form-field-border-active: 0.125rem solid #0095FF;
 $form-field-border-error: 0.063rem solid #D22D2D;
 $form-field-MIN-width: 25rem;

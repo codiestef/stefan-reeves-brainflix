@@ -1,0 +1,95 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color:$prim-col-White;
+  
+    &__logo img {
+      height: 1.5rem;
+      padding-bottom: .7rem; // Adjust size as necessary
+    }
+  
+    &__search-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding-bottom: .5rem;
+    }
+  
+    &__search {
+      width: 80%;
+      height: 1rem;
+      border:$form-field-border;
+      border-radius:$form-field-radius;
+      padding:$form-field-padding-M;
+    }
+  
+      &__avatar {
+        // width: 2.25rem; // Adjust size as necessary
+        height: 2.25rem;
+        border-radius: 50%;
+      }
+  
+    &__button {
+        font-size:$button-font-size-M;
+        color:$button-font-color;
+        background-color:$button-background;
+        height:$button-height;
+        border-radius:$button-radius;
+        font-weight:$button-font-weight;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        cursor: pointer;
+        width:100%;
+        border: none;
+  
+      &__icon {
+        margin-right: 5px; // Space between icon and text
+        height: 20px; // Adjust size as necessary
+      }
+    }
+  }
+  
+  // Media query for tablet screens
+  @include tablet {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  
+      &__logo {
+        flex: 0 1 auto; // Flexible grow, shrink, basis
+      }
+  
+      &__search-container {
+        flex: 1; // Takes up remaining space
+        flex-direction: row;
+        justify-content: flex-end; // Align to the center-right
+        align-items: center;
+        padding-right: 20px; // Space before the profile
+      }
+  
+      &__search {
+        width: auto; // Auto width based on content
+        margin: 0 20px; // Space around search bar
+      }
+  
+      &__button {
+        width: auto;
+        margin-top: 0;
+        margin-right: 10px; // Space before the profile picture
+      }
+  
+      &__profile {
+        order: 3; // Moves the profile to the far right
+      }
+    }
+  }

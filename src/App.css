@@ -1,0 +1,10 @@
+@import './components/Navbar/Navbar.css';
+/* TYPE KIT */
+/* Typeface & Weights: */
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url(./assets/Font/AvenirNextLTPro-Regular.otf) format("otf") local(Avenir Next LT Pro);
+  font-weight: 400;
+}
+/* Text Styles: */
+/* COLORS */
