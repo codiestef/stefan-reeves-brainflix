@@ -29,11 +29,14 @@
 
     &__channel {
         font-size:$sub-header-font-size-M;
+        font-weight:$header-font-weight;
         color:$prim-col-Black;
         margin: .25rem;
     }
     
     &__timestamp {
+        font-size:$body-font-size-M;
+        font-weight:$label-font-weight;
         color:$prim-col-Silver;
         margin: .25rem;
     }
@@ -46,10 +49,14 @@
     }
 
     &__views {
+        font-size:$body-font-size-M;
+        font-weight:$label-font-weight;
         margin: .25rem;
     }
 
     &__likes {
+        font-size:$body-font-size-M;
+        font-weight:$label-font-weight;
         margin: .25rem;
     }
 

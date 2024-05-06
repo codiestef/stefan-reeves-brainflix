@@ -1,0 +1,65 @@
+/* COLORS */
+.video-hero-about {
+  margin: 1.25rem 1rem;
+  border-bottom: 0.08rem solid #E1E1E1;
+}
+.video-hero-about__title {
+  font-size: 1.5rem;
+  color: #323232;
+  margin-bottom: 10px;
+  border-bottom: 0.08rem solid #E1E1E1;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .video-hero-about__title {
+    font-size: 1.5rem;
+  }
+}
+.video-hero-about__details {
+  display: flex;
+}
+.video-hero-about__static {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.video-hero-about__channel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #323232;
+  margin: 0.25rem;
+}
+.video-hero-about__timestamp {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #AFAFAF;
+  margin: 0.25rem;
+}
+.video-hero-about__dynamic {
+  display: flex;
+  flex-direction: column;
+  color: #E1E1E1;
+  width: 50%;
+}
+.video-hero-about__views {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0.25rem;
+}
+.video-hero-about__likes {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0.25rem;
+}
+.video-hero-about__description {
+  font-size: 0.75rem;
+  color: #323232;
+  padding-bottom: 0.5rem;
+  border-top: 0.08rem solid #E1E1E1;
+  padding-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .video-hero-about__description {
+    font-size: 0.875rem;
+  }
+}
