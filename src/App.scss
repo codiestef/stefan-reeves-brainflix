@@ -1,4 +1,11 @@
-@import './components/Navbar/Navbar.css';
+@import './styles/partials/mixins';
+@import './styles/partials/variables';
+
+@import './styles/componentstyles/Navbar.scss';
+@import './styles/componentstyles/VideoHero.scss';
+@import './styles/componentstyles/VideoHeroAbout.scss';
+@import './styles/componentstyles/VideoHeroComments.scss';
+@import './styles/componentstyles/VideosNextList.scss';
 
 /* TYPE KIT */
 
