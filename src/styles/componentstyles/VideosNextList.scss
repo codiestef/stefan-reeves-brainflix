@@ -1,0 +1,43 @@
+@import '../partials/mixins';
+@import '../partials/variables';
+
+.next-video {
+    display: flex;
+    
+    // @include desktop {
+    //     border-bottom:$divider;
+    // }
+
+    &__video {
+        // display: flex;
+        align-items: center;
+        cursor: pointer;
+        // margin-bottom: 10px;
+        flex-direction: row;
+        
+    }
+
+        &__thumbnail {
+            width: 30%;
+            height: 25%;
+            border-radius: .25rem;
+            align-items: center;
+            // margin-right: 10px;
+        }
+
+        // &__details {
+        //     justify-content: space-between;
+
+        
+            &__title {
+                font-size:$sub-header-font-size-M;
+                font-weight:$header-font-weight;
+                margin: 0 0 0 1rem;
+            }
+
+            &__channel {
+                font-size:$body-font-size-M;
+                margin: 0 0 0 1rem;
+            }
+        
+}
