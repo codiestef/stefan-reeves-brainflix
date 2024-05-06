@@ -1,0 +1,67 @@
+@import '../partials/mixins';
+@import '../partials/variables';
+
+.video-hero-about {
+    margin: 1.25rem 1rem;
+    border-bottom:$divider;
+
+    &__title {
+        font-size:$page-header-font-size-M;
+        color:$prim-col-Black;
+        margin-bottom: 10px;
+        border-bottom:$divider;
+        padding-bottom: 1rem;
+
+        @include tablet {
+            font-size:$page-header-font-size-DT;
+        }
+    }
+
+    &__details {
+        display: flex;
+    }
+
+    &__static {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    &__channel {
+        font-size:$sub-header-font-size-M;
+        color:$prim-col-Black;
+        margin: .25rem;
+    }
+    
+    &__timestamp {
+        color:$prim-col-Silver;
+        margin: .25rem;
+    }
+    
+    &__dynamic {
+        display:flex;
+        flex-direction: column;
+        color:$sec-color-Mercury;
+        width: 50%;
+    }
+
+    &__views {
+        margin: .25rem;
+    }
+
+    &__likes {
+        margin: .25rem;
+    }
+
+    &__description {
+        font-size:$body-font-size-M;
+        color:$prim-col-Black;
+        padding-bottom: .5rem;
+        border-top:$divider;
+        padding-top: .5rem;
+
+        @include tablet {
+            font-size:$body-font-size-DT;
+        }
+    }
+}
