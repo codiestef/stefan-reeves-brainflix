@@ -8,30 +8,57 @@
     padding: 1rem;
     background-color:$prim-col-White;
   
-    &__logo img {
+    &__logo {
+      display: block;
+    
+    & img {
       height: 1.5rem;
-      padding-bottom: .7rem; // Adjust size as necessary
+      padding-bottom: .7rem;
     }
+  }
   
-    &__search-container {
+    &__search-upload-container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       width: 100%;
       padding-bottom: .5rem;
+
+      @include tablet {
+        flex-direction: row;
+        align-items: flex-end;
+      }
     }
-  
+
     &__search {
       width: 80%;
-      height: 1rem;
+      height: 2.5rem;
       border:$form-field-border;
       border-radius:$form-field-radius;
-      padding:$form-field-padding-M;
+      padding-left:$form-field-padding-M;
+    }
+
+    &__search-avatar {
+      display: flex;
+      justify-content: space-between;
+
+      @include tablet {
+        flex-direction: column;
+      }
+    }
+
+    &__upload {
+      width: 100%;
+    }
+
+    &__profile {
+      display: flex;
+      width: 2.55rem;
     }
   
       &__avatar {
-        // width: 2.25rem; // Adjust size as necessary
-        height: 2.25rem;
+        height: 2.55rem;
+        width: 2.55rem;
         border-radius: 50%;
       }
   
@@ -50,46 +77,13 @@
         cursor: pointer;
         width:100%;
         border: none;
+        position: relative;
+    }
   
       &__icon {
-        margin-right: 5px; // Space between icon and text
-        height: 20px; // Adjust size as necessary
+        position: absolute;
+        left: 1rem;
+        height: 20px;
       }
     }
-  }
   
-  // Media query for tablet screens
-  @include tablet {
-    .navbar {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-  
-      &__logo {
-        flex: 0 1 auto; // Flexible grow, shrink, basis
-      }
-  
-      &__search-container {
-        flex: 1; // Takes up remaining space
-        flex-direction: row;
-        justify-content: flex-end; // Align to the center-right
-        align-items: center;
-        padding-right: 20px; // Space before the profile
-      }
-  
-      &__search {
-        width: auto; // Auto width based on content
-        margin: 0 20px; // Space around search bar
-      }
-  
-      &__button {
-        width: auto;
-        margin-top: 0;
-        margin-right: 10px; // Space before the profile picture
-      }
-  
-      &__profile {
-        order: 3; // Moves the profile to the far right
-      }
-    }
-  }
