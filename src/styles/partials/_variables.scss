@@ -1,29 +1,8 @@
-// import React from 'react';
-// import fontface from './src'
 
-// @font-face {
-//     font-family: 'Avenir Next LT Pro';
-//         src: url(../../assets/fonts/AvenirNextLTPro.ttf) format('ttf') local(Avenir Next LT Pro);
-//         font-weight: 400;
-//     }
-    
-//     @font-face {
-//         font-family: 'Avenir Next LT Pro';
-//         src: url(../../assets/fonts/AvenirNextLTProDemi.ttf) format('ttf') local(Avenir Next LT Pro Demi);
-//         font-weight: 600;
-//     }
-    
-//     @font-face {
-//         font-family: 'Avenir Next LT Pro';
-//         src: url(../../assets/fonts/AvenirNextLTProBold.ttf) format('ttf') local(Avenir Next LT Pro Bold);
-//         font-weight: 700;
-//     }
-
-/* Text Styles: */
 $body-font-weight: 400;
 $body-font-color: #323232;
 
-$body-font-size-M: .85rem;
+$body-font-size-M: .75rem;
 $body-line-height-M: 1.125rem;
 
 $body-font-size-DT: 0.875rem;
@@ -47,15 +26,15 @@ $section-header-font-size-DT: 2rem;
 $section-header-line-height-DT: 2.3rem;
 
 // sub header
-$sub-header-font-size-M: 1rem;
-$sub-header-line-height-M: 1.2rem;
+$sub-header-font-size-M: .8rem;
+$sub-header-line-height-M: .9rem;
 
 $sub-header-font-size-DT: 1.1rem;
 $sub-header-line-height-DT: 1.3rem;
 
 // labels
 $label-font-color: #AFAFAF;
-$label-font-weight: 700;
+$label-font-weight: 600;
 $label-padding-bottom: 0.25rem;
 
 $label-font-size-M: 0.65rem;
@@ -90,7 +69,7 @@ $form-field-MIN-width: 25rem;
 $form-field-MAX-width: 100%;
 
 $form-field-MIN-height-M: 2.25rem;
-$form-field-padding-M: 0.75rem;
+$form-field-padding-M: 1.5rem;
 
 $form-field-MIN-height-DT: 2.5rem;
 $form-field-padding-DT: 1.0rem;
