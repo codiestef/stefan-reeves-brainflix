@@ -1,0 +1,33 @@
+/* COLORS */
+.next-videos {
+  margin-left: 1rem;
+}
+
+.next-video {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.next-video__details {
+  margin-left: 1rem;
+}
+.next-video__video {
+  align-items: center;
+  cursor: pointer;
+  flex-direction: row;
+}
+.next-video__thumbnail {
+  width: 30%;
+  height: 25%;
+  border-radius: 0.25rem;
+  align-items: center;
+}
+.next-video__title {
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem 0;
+}
+.next-video__channel {
+  font-size: 0.75rem;
+  margin: 0 0 0 0;
+}
