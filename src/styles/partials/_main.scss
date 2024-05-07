@@ -1,0 +1,81 @@
+@import "./variables";
+
+
+
+body {
+  font-family: $font-face-avenir;
+  font-size: $body-font-size-M;
+  line-height: $body-line-height-M;
+  font-weight: $body-font-weight;
+  color: $body-font-color;
+
+  @include tablet {
+    font-size: $body-font-size-DT;
+    line-height: $body-line-height-DT;
+  }
+}
+
+page-header {
+  font-size: $page-header-font-size-M;
+  line-height: $page-header-line-height-M;
+  font-weight: $header-font-weight;
+  color: $header-font-color;
+
+  @include tablet {
+    font-size: $page-header-font-size-DT;
+    line-height: $page-header-line-height-DT;
+  }
+
+  @include desktop {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+section-header {
+  font-size: $section-header-font-size-M;
+  line-height: $section-header-line-height-M;
+  font-weight: $header-font-weight;
+  color: $header-font-color;
+
+  @include tablet {
+    font-size: $section-header-font-size-DT;
+    line-height: $section-header-line-height-DT;
+  }
+
+  @include desktop {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+sub-header {
+  font-size: $sub-header-font-size-M;
+  line-height: $sub-header-line-height-M;
+  font-weight: $header-font-weight;
+  color: $header-font-color;
+
+  @include tablet {
+    font-size: $sub-header-font-size-DT;
+    line-height: $sub-header-line-height-DT;
+  }
+}
+
+.subcopy {
+  font-size: 14px;
+  color: $BandSite-DarkBlack;
+}
+
+.label {
+  font-size: $label-font-size-M;
+  line-height: $label-line-height-M;
+  color: $sec-color-Mercury;
+  font-weight: $label-font-weight;
+
+  @include tablet {
+    font-size: $label-font-size-DT;
+    line-height: $label-line-height-DT;
+    }
+}
