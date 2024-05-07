@@ -3,7 +3,6 @@
 
 
 body {
-  font-family: $font-face-avenir;
   font-size: $body-font-size-M;
   line-height: $body-line-height-M;
   font-weight: $body-font-weight;
@@ -63,10 +62,7 @@ sub-header {
   }
 }
 
-.subcopy {
-  font-size: 14px;
-  color: $BandSite-DarkBlack;
-}
+
 
 .label {
   font-size: $label-font-size-M;
@@ -79,3 +75,4 @@ sub-header {
     line-height: $label-line-height-DT;
     }
 }
+
