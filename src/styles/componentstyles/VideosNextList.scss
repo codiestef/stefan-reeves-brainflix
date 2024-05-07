@@ -4,6 +4,10 @@
 
 .next-videos {
     margin-left: 1rem;
+
+    @include desktop {
+        width: 30%;
+    }
 }
 .next-video {
     display: flex;
