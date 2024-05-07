@@ -37,9 +37,13 @@ function App() {
       <div className="app">
           <Navbar />
           <VideoHero video={currentVideo} />
-          <VideoHeroAbout video={currentVideo} />
-          <VideoHeroComments comments={currentVideo.comments} />
-          <VideosNextList videos={videos} currentVideoId={currentVideoId} onVideoSelect={handleVideoSelect} />
+          <div className="VideoSelectAndNextDisplay">
+            <div className="VideoHeroAboutCommentsCombo">
+              <VideoHeroAbout video={currentVideo} />
+              <VideoHeroComments comments={currentVideo.comments} />
+            </div>
+            <VideosNextList videos={videos} currentVideoId={currentVideoId} onVideoSelect={handleVideoSelect} />
+          </div>
       </div>
   );
 }
