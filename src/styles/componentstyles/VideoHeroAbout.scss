@@ -5,6 +5,10 @@
     margin: 1.25rem 1rem;
     border-bottom:$divider;
 
+    @include tablet {
+        border-bottom: none;
+    }
+
     &__title {
         font-size:$page-header-font-size-M;
         color:$prim-col-Black;
@@ -14,17 +18,27 @@
 
         @include tablet {
             font-size:$page-header-font-size-DT;
+            border-bottom: none;
         }
     }
 
     &__details {
         display: flex;
+
+        @include tablet {
+           justify-content: space-between;
+        }
+
     }
 
     &__static {
         display: flex;
         flex-direction: column;
         width: 50%;
+
+        @include tablet {
+            flex-direction: row;
+        }
     }
 
     &__channel {
@@ -46,6 +60,10 @@
         flex-direction: column;
         color:$sec-color-Mercury;
         width: 50%;
+
+        @include tablet {
+            flex-direction: row;
+        }
     }
 
     &__views {
