@@ -1,0 +1,57 @@
+@import '../partials/mixins';
+@import '../partials/variables';
+
+.add-comment {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        width: 90%;
+
+    }
+
+    &__form {
+        width:50%;
+
+        @include tablet {
+            width:40%
+
+        }
+    }
+
+    &__label {
+        font-size: $label-font-size-M;
+        line-height: $label-line-height-M;
+        color: #afafaf;
+
+        @include tablet {
+            font-size: $label-font-size-DT;
+            line-height: $label-line-height-DT;
+        }
+    }
+
+    &__input {
+        font-size: large;
+        border: $form-field-border;
+        @include tablet {
+            font-weight: 300;
+        }
+    }
+
+    &__button {
+        background-color: $button-background;
+        border-radius: $button-radius;
+
+        @include tablet {
+            color: $button-font-color;
+
+        }
+    }
+
+    &__icon {
+        height: $button-height;        
+        @include tablet {
+            color: #afafaf;
+        }
+    }
+}
