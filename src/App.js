@@ -2,12 +2,12 @@
 import './App.css';
 
 import React, { useState } from 'react';
-import Navbar from './components/aNavbar/Navbar';
-import VideoHero from './components/VideoHero';
-import VideoHeroAbout from './components/VideoHeroAbout';
-import VideoHeroAddComment from './components/VideoHeroAddComment'
-import VideoHeroComments from './components/VideoHeroComments';
-import VideosNextList from './components/VideosNextList';
+import Navbar from './components/aNavbar/Navbar.jsx';
+import VideoHero from './components/bHeroVideo/VideoHero.jsx';
+import VideoHeroAbout from './components/cAboutVideo/VideoHeroAbout.jsx';
+import VideoHeroAddComment from './components/dHeroAddComment/VideoHeroAddComment.jsx'
+import VideoHeroComments from './components/eHeroComments/VideoHeroComments.jsx';
+import VideosNextList from './components/fNextVideosList/VideosNextList.jsx';
 
 import videos from './data/videos.json';
 import videoDetails from './data/video-details.json';

@@ -3,10 +3,26 @@
 @import './styles/partials/main';
 
 @import './components/aNavbar/Navbar.scss';
-@import './styles/componentstyles/VideoHero.scss';
-@import './styles/componentstyles/VideoHeroAbout.scss';
-@import './styles/componentstyles/VideoHeroComments.scss';
-@import './styles/componentstyles/VideosNextList.scss';
-@import './styles/componentstyles/VideoHeroAboutCommentsCombo.scss';
-@import './styles/componentstyles/VideoSelectAndNextDisplay.scss'
+@import './components/bHeroVideo/VideoHero.scss';
+@import './components/cAboutVideo/VideoHeroAbout.scss';
+@import './components/dHeroAddComment/VideoHeroAddComment.scss';
+@import './components/eHeroComments/VideoHeroComments.scss';
+@import './components/fNextVideosList/VideosNextList.scss';
 
+
+.VideoHeroAboutCommentsCombo {
+    width: 100%;
+
+    @include desktop {
+        width: 65%;
+    }
+}
+
+.VideoSelectAndNextDisplay {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+    }
+}
