@@ -5,21 +5,30 @@ import commentIcon from '../assets/Icons/add_comment.svg';
 function VideoHeroAddComment({ commentsCount }) {
   return (
     <div className="add-comment">
-      <subheader>{commentsCount} Comments</subheader>
-      <form className="add-comment__form">
-        <label class="add-comment__label">
-                JOIN THE CONVERSATION
+        <h3 class="subheader">{commentsCount} Comments</h3>
+
+    <div>
+    <form className="comment-form">
+        <div className="comment-form__labelAndText">
+        <label class="comment-form__label">
+            JOIN THE CONVERSATION
         </label>
-        <div>
-            <input type="text" placeholder="Add a new comment" className="add-comment__input" />
+        <textarea
+            class="comment-form__textarea"
+            type="text"
+            placeholder="Add a new comment"
+        />
         </div>
-        <div>
-            <button type="submit" className="add-comment__button">
-            <img src={commentIcon} alt="Upload" className="add-comment__icon" />
-            COMMENT
+
+            <button
+                className="comment-form__button"
+                type="submit">
+                {/* <img src={commentIcon} alt="Upload" className="add-icon" /> */}
+                COMMENT
             </button>
-        </div>
-      </form>
+
+        </form>
+    </div>
     </div>
   );
 }

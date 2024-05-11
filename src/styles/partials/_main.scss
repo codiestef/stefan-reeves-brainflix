@@ -1,12 +1,18 @@
 @import "./variables";
 
-
+html {
+  font-size: 16px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 body {
   font-size: $body-font-size-M;
   line-height: $body-line-height-M;
   font-weight: $body-font-weight;
   color: $body-font-color;
+  // padding-left: 1rem;
+  // padding-right: 1rem;
 
   @include tablet {
     font-size: $body-font-size-DT;

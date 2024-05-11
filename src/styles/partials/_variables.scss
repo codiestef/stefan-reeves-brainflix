@@ -2,7 +2,7 @@
 $body-font-weight: 400;
 $body-font-color: #323232;
 
-$body-font-size-M: .75rem;
+$body-font-size-M: .8rem;
 $body-line-height-M: 1.125rem;
 
 $body-font-size-DT: 0.875rem;
@@ -13,10 +13,10 @@ $header-font-weight: 700;
 $header-font-color: #000000;
 
 $page-header-font-size-M: 1.5rem;
-$page-header-line-height-M: 1.5rem;
+$page-header-line-height-M: 2rem;
 
-$page-header-font-size-DT: 1.5rem;
-$page-header-line-height-DT: 1.5rem;
+$page-header-font-size-DT: 2.0625rem;
+$page-header-line-height-DT: 2.75rem;
 
 // section header
 $section-header-font-size-M: 1.5rem;
@@ -57,7 +57,7 @@ $button-width-M: 100%;
 
 $button-font-size-DT: 0.75rem;
 $button-line-height-DT: 1.3rem;
-$button-MIN-width-DT: 9.675rem;
+$button-MIN-width-DT: 100%;
 $button-padding-left-right-DT: 2rem;
 
 // form fields
@@ -68,8 +68,9 @@ $form-field-border-error: 0.063rem solid #D22D2D;
 $form-field-MIN-width: 25rem;
 $form-field-MAX-width: 100%;
 
-$form-field-MIN-height-M: 2.25rem;
-$form-field-padding-M: 1.5rem;
+$form-field-MIN-height-M: 4.25rem;
+$form-field-padding-M: .5rem;
+$form-field-width-M: 100%;
 
 $form-field-MIN-height-DT: 2.5rem;
 $form-field-padding-DT: 1.0rem;

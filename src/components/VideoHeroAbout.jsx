@@ -10,7 +10,7 @@ function VideoHeroAbout({ video }) {
     return (
         <div className="video-hero-about">
             <div key={video.id}>
-                <h1 className="video-hero-about__title">{video.title}</h1>
+                <page-header>{video.title}</page-header>
                 <div className="video-hero-about__details">
                     <div className="video-hero-about__static">
                         <subheader className="video-hero-about__channel">By {video.channel}</subheader>

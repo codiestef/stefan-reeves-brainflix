@@ -63,6 +63,7 @@
 
         @include tablet {
             flex-direction: row;
+            justify-content: end;
         }
     }
 

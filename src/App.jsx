@@ -1,9 +1,4 @@
-// import videosData from "./Data/video-details.json"; 
-// import "./App.scss";
 
-// function App() {
-//   const [videos, setVideos] = useState(videosData);
-//   const [selectedVideo, setSelectedVideo]
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import VideoHero from './components/VideoHero';
@@ -14,24 +9,12 @@ import VideosNextList from './components/VideosNextList';
 import videos from './data/videos.json';
 import videoDetails from './data/video-details.json';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <Navbar />
-//     </div>
-//   );
-// }
-
-// export default App;
-
 function App() {
-  // State for the current video ID
+ 
   const [currentVideoId, setCurrentVideoId] = useState(videos[0].id);
 
-  // Find the current video details
   const currentVideo = videoDetails.find(video => video.id === currentVideoId);
 
-  // Handle video selection from the sidebar
   const handleVideoSelect = (id) => {
       setCurrentVideoId(id);
   };
@@ -40,28 +23,16 @@ function App() {
       <div className="app">
           <Navbar />
           <VideoHero video={currentVideo} />
-          <VideoHeroAbout video={currentVideo} />
-          <VideoHeroComments comments={currentVideo.comments} />
-          <VideosNextList videos={videos} currentVideoId={currentVideoId} onVideoSelect={handleVideoSelect} />
+          <div className="VideoSelectAndNextDisplay">
+            <div className="VideoHeroAboutCommentsCombo">
+              <VideoHeroAbout video={currentVideo} />
+              <VideoHeroComments comments={currentVideo.comments} />
+            </div>
+            <VideosNextList videos={videos} currentVideoId={currentVideoId} onVideoSelect={handleVideoSelect} />
+          </div>
       </div>
   );
 }
 
 export default App;
 
-//   return (
-//     <div className="App">
-//       <h1>React State Review</h1>
-
-//       <ul>
-//         {
-//           animalsData.map
-//         }
-//       </ul>
-
-      
-//     </div>
-//   );
-// }
-
-// export default App;

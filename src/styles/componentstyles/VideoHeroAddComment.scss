@@ -2,56 +2,109 @@
 @import '../partials/variables';
 
 .add-comment {
-    display: flex;
-    flex-direction: column;
+    padding: 1rem;
 
     @include tablet {
-        width: 90%;
-
+        padding: 1.5rem;
+        }
     }
 
-    &__form {
-        width:50%;
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: auto;
+    // padding: 1em 1em 1em 5em;
+    
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+    &__labelAndText {
+
 
         @include tablet {
-            width:40%
-
+        flex-direction: column;
+        flex-grow: 1;
         }
     }
 
     &__label {
         font-size: $label-font-size-M;
         line-height: $label-line-height-M;
-        color: #afafaf;
-
+        color: $label-font-color;
+    
         @include tablet {
             font-size: $label-font-size-DT;
             line-height: $label-line-height-DT;
+            }
+        }
+
+    &__textarea {
+        font-size: $body-font-size-M;
+        // padding: $form-field-padding-M;
+        // min-height: $form-field-MIN-height-M;
+        width: 99%;
+        color: $prim-col-Black;
+        border: $form-field-border;
+        border-radius: $form-field-radius;
+        resize: none;
+
+        @include tablet {
+            font-size: $body-font-size-DT;
+            // height: $form-field-MIN-height-DT;
+            width: 90%;
+            padding-left: $form-field-padding-DT;
+            height: $button-height;
+        }
+
+        &::placeholder {
+            color: $prim-col-Black;
+            padding-left: .5rem;
+        }
+
+        &::active {
+            border:$form-field-border-active;
         }
     }
 
-    &__input {
-        font-size: large;
-        border: $form-field-border;
-        @include tablet {
-            font-weight: 300;
-        }
-    }
 
     &__button {
+        // display: flex;
         background-color: $button-background;
         border-radius: $button-radius;
+        color: $button-font-color;
+        font-size: $button-font-size-M;
+        font-weight: $button-font-weight;
+        height: $button-height;
+        width: $button-width-M;
+        text-align: center;
+        background-image: url(../../assets/Icons/add_comment.svg);
+        background-repeat: no-repeat;
+        background-position: 5% 50%;
+        border: none;
 
         @include tablet {
-            color: $button-font-color;
-
+            width: 30%;
         }
-    }
 
-    &__icon {
-        height: $button-height;        
-        @include tablet {
-            color: #afafaf;
+
+        &:hover {
+            color: $button-background-hover;
         }
+
+        // @include tablet {
+        //     width: $button-MIN-width-DT;
+
+        // }
+   
+
+        // & img {
+        // // height: 50%;
+        // margin-right: 40%;        
+        // }
     }
 }
+

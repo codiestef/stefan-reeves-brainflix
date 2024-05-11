@@ -8,7 +8,7 @@ function VideoHero({ video }) {
     return (
         <div className="hero">
             <video className="hero__video" controls poster={video.image}>
-                <source src={video.video} type="video/mp4"/>
+                <source src={`${video.video}?api_key=123`} type="video/mp4"/>
             </video>
         </div>
     );
