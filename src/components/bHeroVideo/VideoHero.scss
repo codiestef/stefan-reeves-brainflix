@@ -1,0 +1,12 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+.hero {
+    background-color: $sec-color-Dark-Black;
+    display: flex;
+    justify-content: center;
+    &__video {
+        width: 80%;
+        height: auto;
+    }
+}

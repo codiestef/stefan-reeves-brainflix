@@ -1,0 +1,93 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+.video-hero-about {
+    margin: 1.25rem 1rem;
+    border-bottom:$divider;
+
+    @include tablet {
+        border-bottom: none;
+    }
+
+    &__title {
+        font-size:$page-header-font-size-M;
+        color:$prim-col-Black;
+        margin-bottom: 10px;
+        border-bottom:$divider;
+        padding-bottom: 1rem;
+
+        @include tablet {
+            font-size:$page-header-font-size-DT;
+            border-bottom: none;
+        }
+    }
+
+    &__details {
+        display: flex;
+
+        @include tablet {
+           justify-content: space-between;
+        }
+
+    }
+
+    &__static {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__channel {
+        font-size:$sub-header-font-size-M;
+        font-weight:$header-font-weight;
+        color:$prim-col-Black;
+        margin: .25rem;
+    }
+    
+    &__timestamp {
+        font-size:$body-font-size-M;
+        font-weight:$label-font-weight;
+        color:$prim-col-Silver;
+        margin: .25rem;
+    }
+    
+    &__dynamic {
+        display:flex;
+        flex-direction: column;
+        color:$sec-color-Mercury;
+        width: 50%;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: end;
+        }
+    }
+
+    &__views {
+        font-size:$body-font-size-M;
+        font-weight:$label-font-weight;
+        margin: .25rem;
+    }
+
+    &__likes {
+        font-size:$body-font-size-M;
+        font-weight:$label-font-weight;
+        margin: .25rem;
+    }
+
+    &__description {
+        font-size:$body-font-size-M;
+        color:$prim-col-Black;
+        padding-bottom: .5rem;
+        border-top:$divider;
+        padding-top: .5rem;
+
+        @include tablet {
+            font-size:$body-font-size-DT;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+.comments {
+    margin: 1.25rem 1rem;
+
+    &__comment {
+        margin-top: 20px;
+        border-bottom:$divider;
+        padding-bottom: 10px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
+        font-size:$body-font-size-M;
+        color:$prim-col-Black;
+        font-weight:$header-font-weight;
+        margin-bottom: 5px;
+    }
+
+    &__timestamp {
+        font-size:$body-font-size-M;
+        color:$sec-color-Mercury;
+    }
+
+    &__content {
+        font-size:$body-font-size-M;
+        color:$body-font-color;
+    }
+}
