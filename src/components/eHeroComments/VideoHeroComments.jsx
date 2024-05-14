@@ -4,7 +4,6 @@ import "../eHeroComments/VideoHeroComments.scss";
 function VideoHeroComments({ comments }) {
     return (
         <div className="comments">
-
             {comments.map((comment) => {
                 const date = new Date(comment.timestamp);
                 const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
