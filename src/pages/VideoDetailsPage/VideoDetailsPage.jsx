@@ -7,9 +7,6 @@ import VideoHeroAddComment from '../../components/dHeroAddComment/VideoHeroAddCo
 import VideoHeroComments from '../../components/eHeroComments/VideoHeroComments';
 import VideosNextList from '../../components/fNextVideosList/VideosNextList';
 
-// import './VideoDetailPage.scss';
-
-// const API_BASE_URL = "https://unit-3-project-api-0a5620414506.herokuapp.com";
 const apiKey = "fce97f0a-b3c2-45c8-b436-63a06132b237";
 
 function VideoDetailPage() {
