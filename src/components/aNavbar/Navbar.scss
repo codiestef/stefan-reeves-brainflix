@@ -8,7 +8,7 @@
   gap: .5rem;
   padding: .5rem;
   background-color:$prim-col-White;
-
+  
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
@@ -99,11 +99,16 @@
     background-repeat: no-repeat;
     background-position: 5% 50%;
     border: none;
+    text-decoration: none;
+    justify-content: center;
+    padding-top: .3rem;
+
+    &:hover {
+      background-color:$button-background-hover;
+    }
 
     @include tablet {
       width:$button-MIN-width-DT;
-      // padding-left: $button-padding-left-right-DT;
-      // padding-right: $button-padding-left-right-DT;
       order: 2;
       margin-right: .5rem;
     }
@@ -127,9 +132,5 @@
     height: 2.55rem;
     width: 2.55rem;
   }
-  // &__avatar-desktop img {
-  //   height: 2.55rem;
-  //   width: 2.55rem;
-  //   border-radius: 50%;
-  // }
+
 }

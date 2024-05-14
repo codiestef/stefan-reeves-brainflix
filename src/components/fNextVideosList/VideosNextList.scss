@@ -1,6 +1,9 @@
 @import '../../styles/partials/mixins';
 @import '../../styles/partials/variables';
 
+a {
+    text-decoration: none;
+}
 
 .next-videos {
     margin-left: 1rem;
@@ -13,9 +16,10 @@
     display: flex;
     margin-top: .5rem;
     
+    
     &__details {
         margin-left: 1rem;
-        
+                
     }
 
     &__video {
@@ -34,6 +38,8 @@
         
         &__title {
                 font-size:$sub-header-font-size-M;
+                color: $prim-col-Black;
+                text-decoration: none;
                 line-height:$sub-header-line-height-M;
                 font-weight:$header-font-weight;
                 margin: 0 0 .3rem 0;
@@ -42,6 +48,7 @@
         &__channel {
                 font-size:$body-font-size-M;
                 margin: 0 0 0 0;
+                color: $prim-col-Black;
         }
         
 }
