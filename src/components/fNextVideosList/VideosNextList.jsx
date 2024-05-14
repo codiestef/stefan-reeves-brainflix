@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "../fNextVideosList/VideosNextList.scss";
 
-function VideosNextList({ videos, currentVideoId, onVideoSelect }) {
+function VideosNextList({ videos, currentVideoId }) {
     return (
         <div className="next-videos">
             <h2 className="next-videos__header">Next Videos</h2>
             {videos.filter(video => video.id !== currentVideoId).map((video) => (
-                <div key={video.id} className="next-video" onClick={() => onVideoSelect(video.id)}>
+                <Link to={`/videos/${video.id}`} key={video.id} className="next-video">
                     <img src={video.image} alt={video.title} className="next-video__thumbnail"/>
                     <div className="next-video__details">
-                        <subheader className="next-video__title">{video.title}</subheader>
+                        <h3 className="next-video__title">{video.title}</h3>
                         <p className="next-video__channel">{video.channel}</p>
                     </div>
-                </div>
+                </Link>
             ))}
         </div>
     );
