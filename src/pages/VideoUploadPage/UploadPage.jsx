@@ -14,7 +14,7 @@ function UploadPage() {
           </div>
           <form className="upload-form">
               <label className="upload-form__label">
-                ADD A VIDEO DESCRIPTION
+                TITLE YOUR VIDEO
               </label>
               <textarea
                   className="upload-form__textarea"

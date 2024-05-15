@@ -13,19 +13,15 @@
         }
     }
 
-
 .upload-video {
     
     &__thumbnail {
         width: 100%;
 
-
         @include tablet {
             width: 40%;
-    
         }
     }
-
 }
 
 .upload-form {
@@ -34,7 +30,7 @@
     align-items: left;
     margin: auto;
     
-        &__label {
+    &__label {
         font-size: $label-font-size-M;
         line-height: $label-line-height-M;
         color: $label-font-color;
@@ -100,5 +96,4 @@
         }
     }
 }
-
 }
