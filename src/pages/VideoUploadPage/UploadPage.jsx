@@ -12,8 +12,6 @@ function UploadPage() {
             <img src={uploadVideo} className="upload-video__thumbnail"/>
             </label>
           </div>
-
-        
           <form className="upload-form">
               <label className="upload-form__label">
                 ADD A VIDEO DESCRIPTION
