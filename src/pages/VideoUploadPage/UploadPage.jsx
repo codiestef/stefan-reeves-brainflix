@@ -4,15 +4,18 @@ import './UploadPage.scss';
 
 function UploadPage() {
   return (
-    <div className="upload-page">
+    <div className="upload">
       <h2>Upload Video</h2>
-        <div className="upload-page__imageAndForm">
+        <div className="upload-page">
           <div className="upload-page__image">
             <label className="upload-form__label">
+              VIDEO THUMBNAIL
             <img src={uploadVideo} className="upload-video__thumbnail"/>
             </label>
           </div>
-          <form className="upload-form">
+          <div className="upload-page__form">
+            <form className="upload-form">
+            
               <label className="upload-form__label">
                 TITLE YOUR VIDEO
               </label>
@@ -29,12 +32,14 @@ function UploadPage() {
                   type="text"
                   placeholder="Add a description to your video"
               />
+              
               <button
                 className="upload-form__button"
                 type="submit">
                 PUBLISH
               </button>
-        </form>
+              </form>
+          </div>
         </div>
     </div>
   );
