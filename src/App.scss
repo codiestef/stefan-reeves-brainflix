@@ -26,3 +26,18 @@
         flex-direction: row;
     }
 }
+
+.select-video-display {
+    @include desktop {
+        width: 60%;
+        margin-left: 3rem;
+    }
+}
+
+.next-video-display {
+    @include desktop {
+        width: 28%;
+        border-left: $divider;
+
+    }
+}
