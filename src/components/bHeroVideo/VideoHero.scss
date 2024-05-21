@@ -5,6 +5,13 @@
     background-color: $sec-color-Dark-Black;
     display: flex;
     justify-content: center;
+
+    @include desktop {
+        padding-left: auto;
+        padding-right: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
     &__video {
         width: 80%;
         height: auto;

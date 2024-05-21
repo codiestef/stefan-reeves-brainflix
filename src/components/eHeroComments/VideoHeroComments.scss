@@ -2,12 +2,12 @@
 @import '../../styles/partials/variables';
 
 .comments {
-    margin: 1.25rem 1rem;
+    margin: 1rem;
 
     &__comment {
-        margin-top: 20px;
+        // margin-top: .5rem;
         border-bottom:$divider;
-        padding-bottom: 10px;
+        padding-bottom: .5rem;
     }
 
     &__header {
@@ -19,7 +19,7 @@
         font-size:$body-font-size-M;
         color:$prim-col-Black;
         font-weight:$header-font-weight;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
     }
 
     &__timestamp {
