@@ -3,9 +3,10 @@
 
 .add-comment {
     padding: 1rem;
+    border-bottom: $divider;
 
     @include tablet {
-        padding: 1.5rem;
+        padding: 0 1.5rem .5rem 1.5rem;
         }
     }
 
@@ -53,15 +54,16 @@
 
         @include tablet {
             font-size: $body-font-size-DT;
-            width: 90%;
-            padding-left: $form-field-padding-DT;
-            min-height: 2rem;
-            height: 2rem;
+            width: 92%;
+            padding-left: 1.25rem;
+            padding-top: .6rem;
+            min-height: 1.3rem;
+            height: 1.3rem;
         }
 
         &::placeholder {
             color: $prim-col-Black;
-            padding-left: .5rem;
+            // padding-left: .25rem;
         }
 
         &::active {
@@ -75,7 +77,7 @@
         border-radius: $button-radius;
         color: $button-font-color;
         font-size: $button-font-size-M;
-        font-weight: $button-font-weight;
+        font-weight: 400;
         height: $button-height;
         width: $button-width-M;
         text-align: center;
@@ -85,8 +87,9 @@
         border: none;
 
         @include tablet {
-            width: 30%;
-            margin-top: $form-field-padding-M;
+            width: 20%;
+            margin-top: 1rem;
+            padding-top: .2rem;
         }
 
 
