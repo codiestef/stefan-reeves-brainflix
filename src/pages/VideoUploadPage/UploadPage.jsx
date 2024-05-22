@@ -23,12 +23,12 @@ function UploadPage() {
 
   return (
     <div className="upload">
-      <h2>Upload Video</h2>
+      <h1 className='page-header'>Upload Video</h1>
       <div className="upload-page">
         <div className="upload-page__image">
           <label className="upload-form__label">
             VIDEO THUMBNAIL
-            <img src={uploadVideo} alt="Upload Thumbnail" className="upload-video__thumbnail"/>
+            <img src={uploadVideo} alt="Upload Thumbnail" className="upload-page__thumbnail"/>
           </label>
         </div>
         <form className="upload-form" onSubmit={handleUpload}>
