@@ -1,113 +1,52 @@
 @import '../../styles/partials/mixins';
 @import '../../styles/partials/variables';
 
+.upload {
+    padding: 1rem;
+    border-top: $divider;
+}
+
 // .upload-page {
-//     padding: 1rem;
 
-//      &__image-and-form {
-
-//         display: flex;
-
+//      display: flex;
+//      flex-direction: column;
 
 //     @include tablet {
+//         display: inline-block;
+//         }
+
+//     @include desktop {
+//         display: flex;
 //         flex-direction: row;
 //         flex-grow: 1;
 //         }
-//     }
+   
 
-// .upload-video {
-    
-//     &__thumbnail {
-//         width: 100%;
+    // &__image {
+    //     @include tablet {
+    //         width: 50%;
+    //         }
 
+    //     @include desktop {
+    //         width: 40%;
+    //         margin-right: 3rem;
+    //         }
+    // }
+
+//     &__form {
 //         @include tablet {
-//             width: 40%;
-//         }
-//     }
-// }
-
-// .upload-form {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: left;
-//     margin: auto;
-    
-//     &__label {
-//         font-size: $label-font-size-M;
-//         line-height: $label-line-height-M;
-//         color: $label-font-color;
-    
-//         @include tablet {
-//             font-size: $label-font-size-DT;
-//             line-height: $label-line-height-DT;
+//             width: 100%;
 //             }
-//         }
 
-//     &__textarea {
-//         font-size: $body-font-size-M;
-//         padding: $form-field-padding-M;
-//         min-height: $form-field-MIN-height-M;
-//         width: 94%;
-//         color: $prim-col-Black;
-//         border: $form-field-border;
-//         border-radius: $form-field-radius;
-//         resize: none;
-
-//         @include tablet {
-//             font-size: $body-font-size-DT;
-//             width: 90%;
-//             padding-left: $form-field-padding-DT;
-//             min-height: 2rem;
-//             height: 2rem;
-//         }
-
-//         &::placeholder {
-//             color: $prim-col-Black;
-//             padding-left: .5rem;
-//         }
-
-//         &::active {
-//             border:$form-field-border-active;
-//         }
-//     }
-
-
-//     &__button {
-//         background-color: $button-background;
-//         border-radius: $button-radius;
-//         color: $button-font-color;
-//         font-size: $button-font-size-M;
-//         font-weight: $button-font-weight;
-//         height: $button-height;
-//         width: $button-width-M;
-//         text-align: center;
-//         background-image: url(../../assets/Icons/publish.svg);
-//         background-repeat: no-repeat;
-//         background-position: 5% 50%;
-//         border: none;
-//         margin-top: $form-field-padding-M;
-
-//         @include tablet {
-//             width: 30%;
-            
-//         }
-
-
-//         &:hover {
-//             background-color: $button-background-hover;
-//         }
+//         @include desktop {
+//             width: 75%;
+//             }
 //     }
 // }
-// }
-
-.upload {
-    padding: 1rem;
-}
 
 .upload-page {
-
-     display: flex;
-     flex-direction: column;
+    //  display: flex;
+    //  flex-direction: column;
 
     @include tablet {
         display: inline-block;
@@ -118,9 +57,8 @@
         flex-direction: row;
         flex-grow: 1;
         }
-   
 
-    &__image {
+        &__image {
         @include tablet {
             width: 50%;
             }
@@ -130,19 +68,6 @@
             margin-right: 3rem;
             }
     }
-
-    &__form {
-        @include tablet {
-            width: 100%;
-            }
-
-        @include desktop {
-            width: 75%;
-            }
-    }
-}
-
-.upload-video {
     
     &__thumbnail {
         width: 100%;
@@ -166,9 +91,10 @@
     }
     
     &__label {
-        font-size: $label-font-size-M;
+        font-size: .85rem;
         line-height: $label-line-height-M;
         color: $label-font-color;
+        margin-top: 1rem;
     
         @include tablet {
             font-size: $label-font-size-DT;
@@ -176,10 +102,22 @@
             }
         }
 
-    &__textarea {
+    &__input {
         font-size: $body-font-size-M;
         padding: $form-field-padding-M;
-        min-height: $form-field-MIN-height-M;
+        
+        width: 94%;
+        color: $prim-col-Black;
+        border: $form-field-border;
+        border-radius: $form-field-radius;
+        resize: none;
+        // margin-bottom: 1.3rem;
+    }
+
+    &__textarea {
+        font-size: $body-font-size-M;
+        padding: 0 .5rem 3rem .8rem;
+        min-height: 3rem;
         width: 94%;
         color: $prim-col-Black;
         border: $form-field-border;
@@ -188,7 +126,7 @@
 
         @include tablet {
             font-size: $body-font-size-DT;
-            width: 90%;
+            width: 94%;
             padding-left: $form-field-padding-DT;
             min-height: 2rem;
             height: 2rem;
@@ -196,7 +134,7 @@
 
         &::placeholder {
             color: $prim-col-Black;
-            padding-left: .5rem;
+            // padding-left: .5rem;
         }
 
         &::active {
@@ -219,8 +157,13 @@
         background-position: 5% 50%;
         border: none;
         margin-top: $form-field-padding-M;
+        cursor: pointer;
 
-
+        @include tablet {
+            width: 15rem;
+            margin-right: 1rem;
+            margin-left: auto;
+        }
 
 
         &:hover {
