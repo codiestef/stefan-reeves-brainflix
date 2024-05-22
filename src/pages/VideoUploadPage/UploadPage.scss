@@ -55,16 +55,17 @@
     @include desktop {
         display: flex;
         flex-direction: row;
-        flex-grow: 1;
+
+        // flex-grow: 1;
         }
 
         &__image {
         @include tablet {
-            width: 50%;
+            width: 40%;
             }
 
         @include desktop {
-            width: 40%;
+            // width: 33%;
             margin-right: 3rem;
             }
     }
@@ -72,9 +73,9 @@
     &__thumbnail {
         width: 100%;
 
-        @include tablet {
-            width: 100%;
-        }
+        // @include tablet {
+        //     width: 100%;
+        // }
     }
 }
 
@@ -86,8 +87,12 @@
 
     @include tablet {
         // width: 30%;
-        margin: 0;
-        
+        margin: 0;  
+    }
+
+    @include desktop {
+        width: 100%;
+        margin: 0;  
     }
     
     &__label {
@@ -124,14 +129,6 @@
         border-radius: $form-field-radius;
         resize: none;
 
-        @include tablet {
-            font-size: $body-font-size-DT;
-            width: 94%;
-            padding-left: $form-field-padding-DT;
-            min-height: 2rem;
-            height: 2rem;
-        }
-
         &::placeholder {
             color: $prim-col-Black;
             // padding-left: .5rem;
@@ -139,6 +136,14 @@
 
         &::active {
             border:$form-field-border-active;
+        }
+
+        @include tablet {
+            font-size: $body-font-size-DT;
+            width: 94%;
+            padding-left: $form-field-padding-DT;
+            min-height: 2rem;
+            height: 2rem;
         }
     }
 
@@ -159,15 +164,14 @@
         margin-top: $form-field-padding-M;
         cursor: pointer;
 
+        &:hover {
+            background-color: $button-background-hover;
+        }
+
         @include tablet {
             width: 15rem;
             margin-right: 1rem;
             margin-left: auto;
-        }
-
-
-        &:hover {
-            background-color: $button-background-hover;
         }
     }
 }
