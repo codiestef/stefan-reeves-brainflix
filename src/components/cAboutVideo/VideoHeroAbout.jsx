@@ -10,15 +10,15 @@ function VideoHeroAbout({ video }) {
     return (
         <div className="video-hero-about">
             <div key={video.id}>
-                <page-header>{video.title}</page-header>
+                <h2 className="video-hero-about__title">{video.title}</h2>
                 <div className="video-hero-about__details">
                     <div className="video-hero-about__static">
-                        <subheader className="video-hero-about__channel">By {video.channel}</subheader>
+                        <h3 className="video-hero-about__channel">By {video.channel}</h3>
                         <p className="video-hero-about__timestamp">{formattedVideoDate}</p>
                     </div>
                     <div className="video-hero-about__dynamic">
-                        <p className="video-hero-about__views"><img src={viewsIcon} alt="Views Icon" /> {video.views}</p>
-                        <p className="video-hero-about__likes"><img src={likesIcon} alt="Likes Icon" /> {video.likes}</p>
+                        <p className="video-hero-about__views"><img className="video-hero-about__icons" src={viewsIcon} alt="Views Icon" /> {video.views}</p>
+                        <p className="video-hero-about__likes"><img className="video-hero-about__icons" src={likesIcon} alt="Likes Icon" /> {video.likes}</p>
                     </div>
                 </div>
                 <p className="video-hero-about__description">{video.description}</p>
