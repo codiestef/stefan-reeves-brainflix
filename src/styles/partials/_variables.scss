@@ -1,4 +1,6 @@
+@import "./fonts";
 
+$font-family: "Avenir Next LT Pro";
 $body-font-weight: 400;
 $body-font-color: #323232;
 
@@ -26,26 +28,26 @@ $section-header-font-size-DT: 2rem;
 $section-header-line-height-DT: 2.3rem;
 
 // sub header
-$sub-header-font-size-M: .8rem;
-$sub-header-line-height-M: .9rem;
+$sub-header-font-size-M: 1rem;
+$sub-header-line-height-M: 1.1rem;
 
 $sub-header-font-size-DT: 1.1rem;
 $sub-header-line-height-DT: 1.3rem;
 
 // labels
-$label-font-color: #AFAFAF;
-$label-font-weight: 600;
+$label-font-color: #afafaf;
+$label-font-weight: 400;
 $label-padding-bottom: 0.25rem;
 
-$label-font-size-M: 0.65rem;
+$label-font-size-M: .9rem;
 $label-line-height-M: 1.3rem;
 
-$label-font-size-DT: 0.75rem;
+$label-font-size-DT: 1rem;
 $label-line-height-DT: 1.3rem;
 
 // buttons
 $button-font-color:#FFFFFF;
-$button-font-weight: 600;
+$button-font-weight: 400;
 $button-background: #0095FF;
 $button-background-hover: #0065AD;
 $button-height: 2.5rem;
