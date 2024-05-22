@@ -2,11 +2,11 @@
 @import '../../styles/partials/variables';
 
 .add-comment {
-    padding: 1rem;
+    padding: 0 0 1rem 0;
     border-bottom: $divider;
 
     @include tablet {
-        padding: 0 1.5rem .5rem 1.5rem;
+        padding: 0 0 1.5rem 0rem;
         }
     }
 
@@ -44,6 +44,7 @@
 
     &__textarea {
         font-size: $body-font-size-M;
+        font-family: $font-family;
         padding: $form-field-padding-M;
         min-height: $form-field-MIN-height-M;
         width: 94%;
@@ -85,16 +86,18 @@
         background-repeat: no-repeat;
         background-position: 5% 50%;
         border: none;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $button-background-hover;
+        }
+
 
         @include tablet {
             width: 20%;
             margin-top: 1rem;
             padding-top: .2rem;
-        }
-
-
-        &:hover {
-            color: $button-background-hover;
         }
     }
 }

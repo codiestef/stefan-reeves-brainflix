@@ -2,12 +2,17 @@
 @import '../../styles/partials/variables';
 
 .comments {
-    margin: 1rem;
+    // margin: 1rem 0;
 
     &__comment {
         // margin-top: .5rem;
         border-bottom:$divider;
-        padding-bottom: .5rem;
+        padding-top: .2rem;
+        padding-bottom: 1.2rem;
+
+        @include tablet {
+            padding-right: 1.2rem;
+          }
     }
 
     &__header {
@@ -19,7 +24,10 @@
         font-size:$body-font-size-M;
         color:$prim-col-Black;
         font-weight:$header-font-weight;
-        // margin-bottom: 5px;
+
+        @include tablet {
+            font-size: $body-font-size-DT;
+          }
     }
 
     &__timestamp {
@@ -30,5 +38,7 @@
     &__content {
         font-size:$body-font-size-M;
         color:$body-font-color;
+        margin: 0;
+        
     }
 }

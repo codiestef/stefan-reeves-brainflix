@@ -2,15 +2,17 @@
 @import '../../styles/partials/variables';
 
 .video-hero-about {
-    margin: 1.25rem 1rem;
-    border-bottom:$divider;
+    margin: 1.25rem 0;
+    
 
-    @include tablet {
-        border-bottom: none;
-    }
+    // @include tablet {
+    //     border-bottom:$divider;
+    // }
 
     &__title {
         font-size:$page-header-font-size-M;
+        line-height: $page-header-line-height-M;
+        font-weight: $header-font-weight;
         color:$prim-col-Black;
         margin-bottom: 10px;
         border-bottom:$divider;
@@ -42,14 +44,19 @@
     }
 
     &__channel {
-        font-size:$sub-header-font-size-M;
-        font-weight:$header-font-weight;
-        color:$prim-col-Black;
+        font-size: $sub-header-font-size-M;
+        line-height: $sub-header-line-height-M;
+        font-weight: 600;
+        color: $header-font-color;
         margin: .25rem;
+
+        @include tablet {
+            padding-right: 2rem;
+        }
     }
     
     &__timestamp {
-        font-size:$body-font-size-M;
+        font-size:$label-font-size-M;
         font-weight:$label-font-weight;
         color:$prim-col-Silver;
         margin: .25rem;
@@ -68,23 +75,34 @@
     }
 
     &__views {
-        font-size:$body-font-size-M;
+        font-size:$label-font-size-M;
         font-weight:$label-font-weight;
+        color: $label-font-color;
         margin: .25rem;
+
+        @include tablet {
+            padding-right: 2rem;
+        }
     }
 
     &__likes {
-        font-size:$body-font-size-M;
+        font-size:$label-font-size-M;
         font-weight:$label-font-weight;
+        color: $label-font-color;
         margin: .25rem;
+    }
+
+    &__icons {
+        padding-right: .35rem;
+        
     }
 
     &__description {
         font-size:$body-font-size-M;
         color:$prim-col-Black;
-        padding-bottom: .5rem;
+        padding: 1rem 0;
         border-top:$divider;
-        padding-top: .5rem;
+        
 
         @include tablet {
             font-size:$body-font-size-DT;

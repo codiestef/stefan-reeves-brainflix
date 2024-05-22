@@ -14,13 +14,11 @@ a {
 }
 .next-video {
     display: flex;
-    // margin-top: .5rem;
     padding-top: 1rem;
-    
     
     &__details {
         margin-left: 1rem;
-        width: 30%;
+        width: 60%;
 
         @include tablet {
             width: 20%;
@@ -29,8 +27,6 @@ a {
         @include desktop {
             width: 100%;
         }
-        // justify-content: space-between;
-                
     }
 
     &__video {
@@ -41,8 +37,8 @@ a {
     }
 
         &__thumbnail {
-            width: 25%;
-            height: 25%;
+            width: 30%;
+            height: 30%;
             border-radius: .25rem;
             align-items: center;
             max-width: 150px;
